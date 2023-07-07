@@ -17,7 +17,7 @@ cp -r build/* $DST_DIR/
 git tag -a $(date -u +"%Y%m%d-%H%M") -m "$1"
 
 cd $DST_DIR
-BRANCH="iamovrhere/${APP}-release-$(date +"%Y%m%d-%H%M")"
+BRANCH="phcgowan/${APP}-release-$(date +"%Y%m%d-%H%M")"
 git checkout $BRANCH || git checkout -b $BRANCH
 git add . && git commit -m "$1"
 
