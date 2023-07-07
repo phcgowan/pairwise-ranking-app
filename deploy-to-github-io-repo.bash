@@ -1,11 +1,11 @@
 #/bin/bash
-# Builds and copies the build over the iamovrhere.github.io repo
+# Builds and copies the build over the phcgowan.github.io repo
 # for demoing.
 set -e
 
 SCRIPT_DIR=$(cd "$( dirname "$0" )" && pwd)
 APP="pairwise-ranking-app"
-DST_DIR="$SCRIPT_DIR/../iamovrhere.github.io/$APP"
+DST_DIR="$SCRIPT_DIR/../phcgowan.github.io/$APP"
 
 PUBLIC_URL="/$APP/" yarn build
 rm -rf $DST_DIR/*
